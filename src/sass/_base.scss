@@ -6,16 +6,17 @@
   font-size: 62.5%;
   --primary: rgb(102, 204, 138);
   --primary-focus: rgb(61, 184, 104);
-  --primary-content: rgb(35, 62, 49);
+  --primary-content: rgb(40, 71, 56);
   --secondary: rgb(55, 124, 251);
   --secondary-focus: rgb(5, 87, 240);
   --accent: rgb(234, 82, 52);
-  --base-100: rgb(250, 250, 250);
-  --base-150: rgb(243, 243, 243);
+  --base-100: rgb(251, 251, 251);
+  --base-150: rgb(247, 247, 247);
   --base-200: rgb(230, 230, 230);
   --base-300: rgb(207, 207, 207);
+  --base-400: rgb(184, 185, 190);
   --base-drop-shadow: rgba(46, 55, 74, 0.1);
-  --base-content: rgb(64, 67, 95);
+  --base-content: rgb(66, 68, 88);
   --font-family: "Montserrat", sans-serif;
 }
 
@@ -42,6 +43,7 @@ ul {
 }
 
 body {
+  position: relative;
   font-size: 1.6rem;
   font-family: var(--font-family);
   color: var(--base-content);

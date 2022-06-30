@@ -17,11 +17,122 @@
     <title>Alienbnb</title>
   </head>
   <body>
+    <aside class="drawer hidden">
+      <div class="drawer__login">
+        <button class="btn btn--primary" type="button">Log in</button>
+        <i class="fa-brands fa-airbnb"></i>
+      </div>
+      <ul>
+        <li>
+          <a class="drawer__link" href="#">
+            <img class="airbnb-img" src="./src/assets/icons/ufo.jpg" alt="" />
+            <span>Naves-Hotel</span>
+          </a>
+        </li>
+        <li>
+          <a class="drawer__link" href="#">
+            <img
+              class="airbnb-img"
+              src="./src/assets/icons/castles.jpg"
+              alt=""
+            />
+            <span>Castillos Nebulares</span>
+          </a>
+        </li>
+        <li>
+          <a class="drawer__link" href="#">
+            <img
+              class="airbnb-img"
+              src="./src/assets/icons/earth-homes.jpg"
+              alt=""
+            />
+            <span>Casas Terrícolas</span>
+          </a>
+        </li>
+        <li>
+          <a class="drawer__link" href="#">
+            <img class="airbnb-img" src="./src/assets/icons/ices.jpg" alt="" />
+            <span>Galaxias Heladas</span>
+          </a>
+        </li>
+        <li>
+          <a class="drawer__link" href="#">
+            <img
+              class="airbnb-img"
+              src="./src/assets/icons/surfing.jpg"
+              alt=""
+            />
+            <span>Planetas Acuáticos</span>
+          </a>
+        </li>
+        <li>
+          <a class="drawer__link" href="#">
+            <img
+              class="airbnb-img"
+              src="./src/assets/icons/beaches.jpg"
+              alt=""
+            />
+            <span>Asteroides con Playa</span>
+          </a>
+        </li>
+        <li>
+          <a class="drawer__link" href="#">
+            <img
+              class="airbnb-img"
+              src="./src/assets/icons/forests.jpg"
+              alt=""
+            />
+            <span>Montañas de Metano</span>
+          </a>
+        </li>
+        <li>
+          <a class="drawer__link" href="#">
+            <img
+              class="airbnb-img"
+              src="./src/assets/icons/luxurious.jpg"
+              alt=""
+            />
+            <span>Casas Comestibles</span>
+          </a>
+        </li>
+        <li>
+          <a class="drawer__link" href="#">
+            <img
+              class="airbnb-img"
+              src="./src/assets/icons/tropical.jpg"
+              alt=""
+            />
+            <span>Cercanas a su Estrella</span>
+          </a>
+        </li>
+        <li>
+          <a class="drawer__link" href="#">
+            <img
+              class="airbnb-img"
+              src="./src/assets/icons/tiny-houses.jpg"
+              alt=""
+            />
+            <span>No se aceptan humanos</span>
+          </a>
+        </li>
+        <li>
+          <a class="drawer__link" href="#">
+            <img
+              class="airbnb-img"
+              src="./src/assets/icons/cavernicolas.jpg"
+              alt=""
+            />
+            <span>Edad de Piedra</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
     <header class="header">
       <nav class="navbar">
         <ul>
           <li>
-            <a class="navbar__link" href="/index.html">
+            <a class="navbar__link" href="#">
               <i class="fa-brands fa-airbnb"></i>
               <span class="fa-airbnb__heading">alienbnb</span>
             </a>
@@ -37,9 +148,8 @@
             />
           </li>
           <li>
-            <a class="navbar__link" href="/index.html">
-              <span> Become an Alien </span>
-
+            <a class="navbar__link" href="#">
+              <span> Házte Alien </span>
               <i class="fa-solid fa-shuttle-space"></i>
             </a>
 
@@ -58,7 +168,7 @@
           <span class="heading-primary--main">alienbnb</span>
           <span class="heading-primary--subtitle"
             >Encuentra alojamiento en cualquier lugar del universo, descubre las
-            galaxias y cruzeros espaciales.</span
+            galaxias y cruzeros interplanetarios.</span
           >
         </h1>
       </main>
@@ -83,7 +193,7 @@
       </div>
     </header>
 
-    <section class="section">
+    <section class="section section--populars">
       <div class="wave-top">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -93,12 +203,82 @@
         </svg>
       </div>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui sit
-        delectus esse numquam nemo! Voluptatem illum iste corrupti consequatur
-        odit, praesentium accusantium repellendus rerum eum dolor et eveniet,
-        aperiam labore.
-      </p>
+      <h2 class="heading-secondary">mas populares</h2>
+      <div class="row">
+        <div class="card">
+          <div class="card__side card__side--front">
+            <div class="card__header">
+              <img
+                class="card__image"
+                src="./src/assets/places/tatouine.webp"
+                alt=""
+              />
+            </div>
+            <div class="card__body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              perspiciatis.
+            </div>
+          </div>
+          <div class="card__side card__side--back">
+            <div class="card__header--back"></div>
+            <div class="card__body--back">
+              <button class="btn btn--primary btn--back" type="button">
+                Reservar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__side card__side--front">
+            <div class="card__header">
+              <img
+                class="card__image"
+                src="./src/assets/places/1ef9b49c-6f99-4018-95f9-8471a9fbbd15.webp"
+                alt=""
+              />
+            </div>
+            <div class="card__body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              perspiciatis.
+            </div>
+          </div>
+          <div class="card__side card__side--back">
+            <div class="card__header--back"></div>
+            <div class="card__body--back">
+              <button class="btn btn--primary btn--back" type="button">
+                Reservar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__side card__side--front">
+            <div class="card__header">
+              <img
+                class="card__image"
+                src="./src/assets/places/b48c39c7-dc65-4cee-9d32-d52ea70afc2a.webp"
+                alt=""
+              />
+            </div>
+            <div class="card__body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              perspiciatis.
+            </div>
+          </div>
+          <div class="card__side card__side--back">
+            <div class="card__header--back"></div>
+            <div class="card__body--back">
+              <button class="btn btn--primary btn--back" type="button">
+                Reservar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="section"></section>
   </body>
 </html>

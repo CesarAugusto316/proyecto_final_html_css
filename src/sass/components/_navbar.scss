@@ -1,12 +1,12 @@
 .navbar {
-  padding: 0 10rem;
+  color: var(--primary-content);
+  padding: 0 6rem;
   height: 7.2rem;
   box-shadow: 0px 0px 16px 2px rgba(46, 55, 74, 0.125);
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background-color: var(--white-color);
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -25,10 +25,10 @@
   }
 
   &__link {
+    padding: 0 2rem;
     letter-spacing: -0.25px;
     font-size: 1.6rem;
     font-weight: 600;
-    background-color: var(--white-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,16 +40,15 @@
 
     &:link,
     &:visited {
-      color: var(--grey-dark-color-3);
+      color: var(--primary-content);
     }
 
     &:hover {
-      color: var(--grey-dark-color-2);
-      border-bottom: 5px solid var(--primary-light-color);
-      background-color: var(--grey-light-color-1);
+      background-color: var(--base-drop-shadow);
     }
+
     &:active {
-      color: var(--grey-dark-color-1);
+      color: var(--base-400);
     }
 
     // .fa-brands {
@@ -80,38 +79,13 @@
 }
 
 .input-search {
+  margin-left: 8.4rem;
   box-shadow: 0px 0px 8px 4px var(--base-drop-shadow);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   &:focus,
   &:hover {
     outline: 3px solid var(--primary);
-  }
-}
-
-.btn--toggle {
-  margin-left: 2.4rem;
-  cursor: pointer;
-  border: 2px solid var(--base-drop-shadow);
-  border-radius: 25rem;
-  padding: 0.8rem;
-  min-width: 10rem;
-  box-shadow: 0px 0px 8px 3px var(--base-drop-shadow);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.6rem;
-
-  .user-avatar {
-    width: 3.2rem;
-    height: 3.2rem;
-    display: inline-block;
-
-    img {
-      border-radius: 50%;
-      width: 100%;
-      height: 100%;
-    }
   }
 }
 

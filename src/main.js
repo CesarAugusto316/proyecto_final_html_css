@@ -1,3 +1,13 @@
-// @ts-check
+const btnToggle = document.querySelector(".btn--toggle");
+const drawer = document.querySelector(".drawer");
 
-// import "./sass/main.scss";
+btnToggle?.addEventListener("click", () => {
+  drawer?.classList.add("slide-in-right");
+  drawer?.classList.remove("slide-out-right");
+  drawer?.classList.remove("hidden");
+});
+
+drawer?.addEventListener("mouseleave", () => {
+  drawer?.classList.add("slide-out-right");
+  drawer?.classList.remove("slide-in-right");
+});

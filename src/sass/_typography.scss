@@ -1,0 +1,28 @@
+.heading-secondary {
+  letter-spacing: -1.6px;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    15deg,
+    var(--accent) 10%,
+    var(--primary-focus) 33%,
+    var(--secondary) 66%,
+    var(--secondary-focus) 100%
+  );
+  background-size: 200% auto;
+  text-align: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  font-weight: 500;
+  font-size: 4rem;
+  text-shadow: 0px 0px 8px 4px var(--base-drop-shadow);
+  animation: textclip 4s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
