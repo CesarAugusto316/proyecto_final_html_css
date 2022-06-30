@@ -2,7 +2,7 @@
 
 ## Alienbnb
 
-![plot](./src/assets/larnu.png)
+![plot](./src/assets/localhost_3000_index.html.png)
 
 An interplanetary booking App for Aliens, Airbnb inspired.
 
