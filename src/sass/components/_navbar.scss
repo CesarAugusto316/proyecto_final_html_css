@@ -1,0 +1,138 @@
+.navbar {
+  padding: 0 10rem;
+  height: 7.2rem;
+  box-shadow: 0px 0px 16px 2px rgba(46, 55, 74, 0.125);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--white-color);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 2px solid var(--base-drop-shadow);
+
+  ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    letter-spacing: -0.25px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-width: 13.2rem;
+    height: 100%;
+    border-bottom: 5px solid inherit;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:link,
+    &:visited {
+      color: var(--grey-dark-color-3);
+    }
+
+    &:hover {
+      color: var(--grey-dark-color-2);
+      border-bottom: 5px solid var(--primary-light-color);
+      background-color: var(--grey-light-color-1);
+    }
+    &:active {
+      color: var(--grey-dark-color-1);
+    }
+
+    .fa-brands {
+    }
+
+    .fa-airbnb {
+      font-size: 3.4rem;
+      font-weight: 600;
+
+      &__heading {
+        font-size: 2.3rem;
+        letter-spacing: -1.25px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .fa-solid {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+
+  .btn-box {
+    margin-left: auto;
+    display: block;
+    min-width: 12.2rem;
+  }
+}
+
+.input-search {
+  box-shadow: 0px 0px 8px 4px var(--base-drop-shadow);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  &:focus,
+  &:hover {
+    outline: 3px solid var(--primary);
+  }
+}
+
+.btn--toggle {
+  margin-left: 2.4rem;
+  cursor: pointer;
+  border: 2px solid var(--base-drop-shadow);
+  border-radius: 25rem;
+  padding: 0.8rem;
+  min-width: 10rem;
+  box-shadow: 0px 0px 8px 3px var(--base-drop-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  .user-avatar {
+    width: 3.2rem;
+    height: 3.2rem;
+    display: inline-block;
+
+    img {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.main {
+  @include positionCenter;
+
+  .heading-primary {
+    text-align: center;
+
+    &--main {
+      display: block;
+      font-size: 8.4rem;
+      letter-spacing: -8.6px;
+      font-weight: 600;
+    }
+
+    &--subtitle {
+      display: block;
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: -0.25px;
+    }
+  }
+}
