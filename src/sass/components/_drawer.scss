@@ -44,6 +44,10 @@
       transform: scale(1.06);
     }
 
+    &:active {
+      transform: translateY(1px);
+    }
+
     .fa-solid {
       font-size: 2.2rem;
       font-weight: 600;
