@@ -1,5 +1,12 @@
 .heading-primary {
+  color: var(--primary-content);
   text-align: center;
+
+  &--small {
+    letter-spacing: -1px;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
 
   &--main {
     display: block;

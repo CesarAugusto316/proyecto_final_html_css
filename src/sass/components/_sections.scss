@@ -1,0 +1,49 @@
+.section {
+  padding-top: 28rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .wave-top {
+    height: 25rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    svg {
+      display: block;
+      position: absolute;
+      top: 0;
+
+      path {
+        height: 100%;
+        fill: url("#linear");
+      }
+    }
+  }
+}
+
+.section--populars {
+  padding-bottom: 20rem;
+}
+
+.section--about {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+    148deg,
+    var(--primary-focus),
+    var(--accent)
+  );
+
+  &__content {
+    @include positionCenter;
+
+    p {
+      font-size: 1.6rem;
+      color: var(--primary-content);
+      font-weight: 500;
+      line-height: 1.6;
+    }
+  }
+}

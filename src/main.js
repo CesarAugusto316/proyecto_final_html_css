@@ -11,3 +11,9 @@ drawer?.addEventListener("mouseleave", () => {
   drawer?.classList.add("slide-out-right");
   drawer?.classList.remove("slide-in-right");
 });
+
+/**
+ *
+ * TODO: Implement fade-out in footer and header navbars
+ * with the Intersection Observer API.
+ */
