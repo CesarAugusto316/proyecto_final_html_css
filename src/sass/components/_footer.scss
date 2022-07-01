@@ -1,4 +1,7 @@
 .footer {
+  @include respond(tablet) {
+    padding: 0 2rem;
+  }
   font-weight: 500;
   padding: 0 8rem;
   display: flex;

@@ -18,6 +18,13 @@
   --base-400: rgb(184, 185, 190);
   --base-content: rgb(66, 68, 88);
   --base-drop-shadow: rgba(46, 55, 74, 0.1);
+
+  @include respond(tablet) {
+    font-size: 59.4%;
+  }
+  @include respond(phone) {
+    font-size: 55.6%;
+  }
 }
 
 *,

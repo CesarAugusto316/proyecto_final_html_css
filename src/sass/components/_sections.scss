@@ -1,4 +1,10 @@
 .section {
+  @include respond(tablet) {
+    padding-top: 24rem;
+  }
+  @include respond(phone) {
+    padding-top: 16rem;
+  }
   padding-top: 28rem;
   position: relative;
   width: 100%;
@@ -24,12 +30,15 @@
 }
 
 .section--populars {
+  @include respond(tablet) {
+    padding-bottom: 12rem;
+  }
   padding-bottom: 20rem;
 }
 
 .section--about {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   height: 100vh;
   background-image: linear-gradient(
     148deg,
@@ -38,9 +47,20 @@
   );
 
   &__content {
+    @include respond(tablet) {
+      width: 86%;
+    }
+    @include respond(phone) {
+      width: 100%;
+      padding: 2rem;
+    }
+
+    width: 65%;
     @include positionCenter;
 
     p {
+      padding-left: 1rem;
+      text-indent: 2rem;
       font-size: 1.8rem;
       color: var(--primary-content);
       font-weight: 500;
