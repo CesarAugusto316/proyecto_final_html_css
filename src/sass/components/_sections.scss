@@ -29,6 +29,7 @@
 
 .section--about {
   position: relative;
+  z-index: -1;
   height: 100vh;
   background-image: linear-gradient(
     148deg,
@@ -40,7 +41,7 @@
     @include positionCenter;
 
     p {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       color: var(--primary-content);
       font-weight: 500;
       line-height: 1.6;
