@@ -45,6 +45,7 @@
     var(--primary-focus),
     var(--accent)
   );
+  box-shadow: 0px 0px 12px 2px var(--base-drop-shadow);
 
   &__content {
     @include respond(tablet) {

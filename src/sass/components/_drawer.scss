@@ -8,6 +8,9 @@
     padding: 2.8rem 1.6rem;
   }
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   z-index: 20;
   height: 100vh;
@@ -17,6 +20,28 @@
   background-color: var(--base-150);
   box-shadow: 0px 0px 12px 2px var(--base-drop-shadow);
   padding: 3rem;
+
+  .become-alien {
+    @include respond(tablet) {
+      display: block;
+    }
+    text-align: center;
+    display: none;
+
+    a {
+      display: inline-block;
+      padding: 1.4rem;
+      border-radius: 25rem;
+      text-decoration: none;
+      color: var(--base-content);
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      &:hover {
+        background-color: var(--base-drop-shadow);
+      }
+    }
+  }
 
   &__login {
     display: flex;
@@ -57,21 +82,12 @@
       transform: translateY(1px);
     }
 
-    .fa-solid {
-      font-size: 2.2rem;
-      font-weight: 600;
-    }
-
     .airbnb-img {
       opacity: 0.7;
       max-width: 2.75rem;
       max-height: 2.75rem;
     }
   }
-}
-
-.hidden {
-  display: none;
 }
 
 .slide-in-right {

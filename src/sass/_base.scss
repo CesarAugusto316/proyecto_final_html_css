@@ -57,6 +57,7 @@ body {
   background-color: var(--base-150);
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 textarea,
@@ -69,4 +70,8 @@ input {
   background-color: var(--base-150);
   padding: 1.4rem;
   width: 100%;
+}
+
+.hidden {
+  visibility: hidden;
 }

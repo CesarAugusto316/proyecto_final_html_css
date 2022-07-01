@@ -3,6 +3,12 @@
     padding: 0;
   }
 
+  .become-alien {
+    @include respond(tablet) {
+      display: none;
+    }
+  }
+
   color: var(--primary-content);
   padding: 0 6rem;
   height: 7.2rem;
@@ -21,6 +27,7 @@
     width: 100%;
     height: 100%;
     justify-content: space-between;
+    gap: 1.4rem;
 
     li {
       display: flex;
@@ -31,6 +38,8 @@
   &__link {
     @include respond(tablet) {
       min-width: 10rem;
+      padding-right: 0;
+      gap: 0.4rem;
     }
     padding: 0 2rem;
     letter-spacing: -0.25px;
@@ -63,6 +72,10 @@
       font-weight: 600;
 
       &__heading {
+        @include respond(phone) {
+          font-weight: 600;
+          font-size: 2rem;
+        }
         font-size: 2.3rem;
         letter-spacing: -1.25px;
         font-weight: 700;
@@ -71,6 +84,11 @@
   }
 
   .input-search {
+    @include respond(tablet) {
+      margin-left: 0;
+    }
+
+    max-width: 100%;
     border-radius: 25rem;
     margin-left: 5.4rem;
     box-shadow: 0px 0px 8px 4px var(--base-drop-shadow);
@@ -85,11 +103,5 @@
   .fa-solid {
     font-size: 2.2rem;
     font-weight: 600;
-  }
-
-  .btn-box {
-    margin-left: auto;
-    display: block;
-    min-width: 12.2rem;
   }
 }
