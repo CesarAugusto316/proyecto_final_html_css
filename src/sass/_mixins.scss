@@ -1,13 +1,9 @@
 @mixin positionCenter {
   position: absolute;
+  z-index: 1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-@mixin px {
-  padding-left: 6rem;
-  padding-right: 6rem;
 }
 
 /*

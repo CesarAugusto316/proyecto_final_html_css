@@ -9,8 +9,8 @@
 
   position: fixed;
   width: 100%;
-  z-index: 10;
   border-bottom: 2px solid var(--base-drop-shadow);
+  z-index: 10;
 
   ul {
     display: flex;
@@ -51,9 +51,6 @@
       color: var(--base-400);
     }
 
-    // .fa-brands {
-    // }
-
     .fa-airbnb {
       font-size: 3.4rem;
       font-weight: 600;
@@ -86,27 +83,5 @@
   &:focus,
   &:hover {
     outline: 3px solid var(--primary);
-  }
-}
-
-.main {
-  @include positionCenter;
-
-  .heading-primary {
-    text-align: center;
-
-    &--main {
-      display: block;
-      font-size: 8.4rem;
-      letter-spacing: -8.6px;
-      font-weight: 600;
-    }
-
-    &--subtitle {
-      display: block;
-      font-size: 2.2rem;
-      font-weight: 500;
-      letter-spacing: -0.25px;
-    }
   }
 }

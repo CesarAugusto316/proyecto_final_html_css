@@ -1,3 +1,21 @@
+.heading-primary {
+  text-align: center;
+
+  &--main {
+    display: block;
+    font-size: 8.4rem;
+    letter-spacing: -8.6px;
+    font-weight: 600;
+  }
+
+  &--subtitle {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+  }
+}
+
 .heading-secondary {
   letter-spacing: -1.6px;
   text-transform: uppercase;
